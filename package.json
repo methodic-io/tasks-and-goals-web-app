@@ -1,0 +1,16 @@
+{
+  "name": "tasks-and-goals-web-app",
+  "version": "0.0.0",
+  "description": "The Methodic Tasks and Goals React web app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/methodic-io/tasks-and-goals-web-app.git"
+  },
+  "author": "Edward Minnett (ed@methodic.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/methodic-io/tasks-and-goals-web-app/issues"
+  },
+  "homepage": "https://github.com/methodic-io/tasks-and-goals-web-app#readme"
+}
