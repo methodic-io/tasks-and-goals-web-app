@@ -22,6 +22,10 @@
     "mocha": "^2.5.3",
     "react-addons-test-utils": "^15.2.0"
   },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "mocha ./spec/**/*_spec.js --compilers js:babel-core/register"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/methodic-io/tasks-and-goals-web-app.git"
