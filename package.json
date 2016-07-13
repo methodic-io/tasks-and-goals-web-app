@@ -45,6 +45,7 @@
     "build:prod": "webpack --env.prod -p",
     "check-coverage": "istanbul check-coverage --statements 77 --branches 100 --functions 28 --lines 77",
     "clean-dist": "rimraf dist",
+    "lint": "eslint ./src",
     "start": "webpack-dev-server --env.dev --content-base dist",
     "test": "karma start",
     "test:watch": "npm start -- --auto-watch --no-single-run",
