@@ -43,6 +43,7 @@
   "scripts": {
     "build": "webpack --env.dev",
     "build:prod": "webpack --env.prod -p",
+    "check-coverage": "istanbul check-coverage --statements 77 --branches 100 --functions 28 --lines 77",
     "clean-dist": "rimraf dist",
     "start": "webpack-dev-server --env.dev --content-base dist",
     "test": "karma start",
