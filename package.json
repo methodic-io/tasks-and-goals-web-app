@@ -33,6 +33,7 @@
     "karma-webpack": "^1.7.0",
     "mocha": "^2.5.3",
     "node-sass": "^3.8.0",
+    "npm-run-all": "^2.3.0",
     "postcss-loader": "^0.9.1",
     "react-addons-test-utils": "^15.2.0",
     "sass-loader": "^4.0.0",
@@ -49,6 +50,7 @@
     "start": "webpack-dev-server --env.dev --content-base dist",
     "test": "karma start",
     "test:watch": "npm start -- --auto-watch --no-single-run",
+    "validate": "npm-run-all --parallel validate-webpack:* lint test --serial check-coverage",
     "validate-webpack:dev": "webpack-validator webpack.config.js --env.dev",
     "validate-webpack:prod": "webpack-validator webpack.config.js --env.prod"
   },
