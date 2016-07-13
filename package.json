@@ -28,8 +28,13 @@
     "webpack-validator": "^2.2.2"
   },
   "scripts": {
-    "start": "webpack-dev-server",
     "test": "mocha ./spec/**/*_spec.js --compilers js:babel-core/register"
+    "build": "webpack --env.dev",
+    "build:prod": "webpack --env.prod -p",
+    "clean-dist": "rimraf dist",
+    "start": "webpack-dev-server --env.dev --content-base dist",
+    "validate-webpack:dev": "webpack-validator webpack.config.js --env.dev",
+    "validate-webpack:prod": "webpack-validator webpack.config.js --env.prod"
   },
   "repository": {
     "type": "git",
