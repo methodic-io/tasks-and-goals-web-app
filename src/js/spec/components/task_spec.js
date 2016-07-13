@@ -2,7 +2,7 @@ import expect from 'expect';
 import expectJSX from 'expect-jsx';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import Task from '../../components/subtask';
+import Task from '../../components/task';
 
 expect.extend(expectJSX);
 
@@ -18,6 +18,6 @@ describe('Task', () => {
   });
 
   it('includes a label', () => {
-    expect(renderedTask()).toIncludeJSX(<div className="label">Subtask Label</div>);
+    expect(renderedTask()).toIncludeJSX(<div className="label">Task Label</div>);
   });
 });
