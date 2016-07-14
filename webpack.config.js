@@ -36,5 +36,11 @@ module.exports = (env) => (
         template: './index.html',
       }),
     ],
+    externals: {
+      cheerio: 'window',
+      'react/addons': true,
+      'react/lib/ExecutionEnvironment': true,
+      'react/lib/ReactContext': true,
+    },
   }
 );
