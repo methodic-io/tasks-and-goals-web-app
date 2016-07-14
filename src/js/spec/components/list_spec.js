@@ -1,7 +1,7 @@
-import expect from 'expect';
+import { expect } from '../spec_helper';
 
 describe('List', () => {
   it('is a dummy test', () => {
-    expect(true).toEqual(true);
+    expect(true).to.equal(true);
   });
 });

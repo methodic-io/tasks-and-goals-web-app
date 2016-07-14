@@ -1,23 +1,12 @@
-import expect from 'expect';
-import expectJSX from 'expect-jsx';
-import React from 'react';
-import TestUtils from 'react-addons-test-utils';
+import { React, expect, mount } from '../spec_helper';
 import Task from '../../components/task';
 
-expect.extend(expectJSX);
-
 describe('Task', () => {
-  const renderedTask = function renderedTask() {
-    const renderer = TestUtils.createRenderer();
-    renderer.render(<Task />);
-    return renderer.getRenderOutput();
-  };
-
   it('includes a checkbox', () => {
-    expect(renderedTask()).toIncludeJSX(<input type="checkbox" />);
+    expect(mount(<Task />)).to.contain(<input type="checkbox" />);
   });
 
   it('includes a label', () => {
-    expect(renderedTask()).toIncludeJSX(<div className="label">Task Label</div>);
+    expect(mount(<Task />)).to.contain(<div className="label">Task Label</div>);
   });
 });
