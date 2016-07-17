@@ -4,6 +4,7 @@
   "description": "The Methodic Tasks and Goals React web app",
   "main": "index.js",
   "dependencies": {
+    "material-ui": "^0.15.2",
     "react": "^15.2.0",
     "react-dom": "^15.2.0"
   },
