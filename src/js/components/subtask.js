@@ -1,10 +1,15 @@
 import React from 'react';
+import Chip from 'material-ui/Chip';
+import Toggle from 'material-ui/Toggle';
+
+require('../../styles/components/subtask.scss');
 
 const Subtask = function Subtask() {
   return (
     <div className="subtask">
-      <input type="checkbox" />
-      <div className="label">Subtask Label</div>
+      <Chip>
+        <Toggle label="Subtask label" labelPosition="right" />
+      </Chip>
     </div>
   );
 };

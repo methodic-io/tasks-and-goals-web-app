@@ -1,12 +1,15 @@
+import _ from 'lodash';
 import React from 'react';
 import Group from './components/group';
-// import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const TasksAndGoals = function TasksAndGoals() {
   return (
-    <div className="tasks-and-goals">
-      <Group />
-    </div>
+    <MuiThemeProvider>
+      <div className="tasks-and-goals">
+        {[...Array(_.random(2, 10))].map((x, i) => <Group key={i + 1} />)}
+      </div>
+    </MuiThemeProvider>
   );
 };
 
