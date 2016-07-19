@@ -6,20 +6,18 @@ import List from './list';
 
 const Group = function Group() {
   return (
-    <div className="group">
-      <Card>
-        <CardHeader
-          title="Group label"
-          actAsExpander
-          showExpandableButton
-        />
-        <CardActions expandable>
-          <Paper zDepth={1}>
-            {[...Array(_.random(2, 10))].map((x, i) => <List key={i + 1} />)}
-          </Paper>
-        </CardActions>
-      </Card>
-    </div>
+    <Card className="group">
+      <CardHeader
+        title="Group Label"
+        actAsExpander
+        showExpandableButton
+      />
+      <CardActions expandable>
+        <Paper zDepth={1}>
+          {[...Array(_.random(2, 10))].map((x, i) => <List key={i + 1} />)}
+        </Paper>
+      </CardActions>
+    </Card>
   );
 };
 
