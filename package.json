@@ -55,6 +55,7 @@
     "lint": "eslint ./src",
     "start": "webpack-dev-server --env.dev --content-base dist",
     "test": "karma start",
+    "test:debug": "npm test -- --no-single-run",
     "test:watch": "npm test -- --auto-watch --no-single-run",
     "validate": "npm-run-all --parallel validate-webpack:* lint test --serial check-coverage",
     "validate-webpack:dev": "webpack-validator webpack.config.js --env.dev",
