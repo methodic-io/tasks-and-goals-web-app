@@ -51,7 +51,7 @@
   "scripts": {
     "build": "webpack --env.dev",
     "build:prod": "webpack --env.prod -p",
-    "check-coverage": "istanbul check-coverage --statements 77 --branches 100 --functions 28 --lines 77",
+    "check-coverage": "istanbul check-coverage --statements 88 --branches 100 --functions 72 --lines 88",
     "clean-dist": "rimraf dist",
     "lint": "eslint ./src",
     "start": "webpack-dev-server --env.dev --content-base dist",
