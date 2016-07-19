@@ -13,7 +13,7 @@ module.exports = (env) => (
       port: 3333,
     },
     context: resolve(__dirname, 'src'),
-    devtool: env.prod ? 'source-map' : 'eval',
+    devtool: 'source-map',
     bail: env.prod,
     module: {
       loaders: [
