@@ -1,12 +1,15 @@
-import { React, expect, mount } from '../spec_helper';
+import { React, expect, shallowWithContext } from '../spec_helper';
 import Subtask from '../../components/subtask';
+import Toggle from 'material-ui/Toggle';
 
 describe('Subtask', () => {
-  it('includes a checkbox', () => {
-    expect(mount(<Subtask />)).to.contain(<input type="checkbox" />);
+  const wrapper = shallowWithContext(<Subtask />);
+
+  it('includes a Toggle', () => {
+    expect(wrapper.find(Toggle)).to.have.length(1);
   });
 
   it('includes a label', () => {
-    expect(mount(<Subtask />)).to.contain(<div className="label">Subtask Label</div>);
+    expect(wrapper.find(Toggle).prop('label')).to.equal('Subtask Label');
   });
 });
