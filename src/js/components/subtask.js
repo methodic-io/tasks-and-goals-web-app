@@ -8,7 +8,7 @@ const Subtask = function Subtask() {
   return (
     <div className="subtask">
       <Chip>
-        <Toggle label="Subtask label" labelPosition="right" />
+        <Toggle label="Subtask Label" labelPosition="right" />
       </Chip>
     </div>
   );
